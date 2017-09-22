@@ -17,13 +17,16 @@
     "hubot": ">=2 <10 || 0.0.0-development"
   },
   "devDependencies": {
-    "hubot": "2.x",
+    "grunt-contrib-watch": "~0.5.3",
     "grunt-release": "~0.6.0",
+    "hubot": "2.x",
     "matchdep": "~0.1.2",
-    "grunt-contrib-watch": "~0.5.3"
+    "mocha": "^3.5.3",
+    "request": "^2.82.0",
+    "request-promise-native": "^1.0.5"
   },
   "main": "index.coffee",
   "scripts": {
-    "test": "true"
+    "test": "mocha test/**/*.test.js --timout 3000 --bail"
   }
 }
